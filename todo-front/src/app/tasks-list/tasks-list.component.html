@@ -1,0 +1,19 @@
+<div style="justify-content: center; display: flex; margin: 50px 0px 50px 0px">   
+    <button (click)="createTask()">Utworz nowe zadanie</button>
+</div>
+<h1>Twoja ToDo lista!</h1>
+<table border>
+    <tr><th>Id</th><th>Co masz do zrobienia</th><th>Miejsce</th><th>Zrobione</th><th colspan= '3' class="x"></th></tr>
+    <tr *ngFor = "let t of tasks">
+        <td>{{t.id}}</td><td>{{t.task_title}}</td><td>{{t.task_where}}</td><td>{{t.task_done}}</td>
+        <td class="x">
+            <button (click)="updateTask(t.id)">Update</button>
+        </td>
+        <td class="x">
+            <button (click)="completeTask(t.id)">Complete</button>
+        </td>
+        <td class="x">
+            <button (click)="deleteTask(t.id)">Delete</button>
+        </td>
+    </tr>
+</table>

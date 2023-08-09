@@ -1,0 +1,10 @@
+<div class="create">
+  <h1 class="fontC">ToDo List</h1>
+  <h3 class="fontC">Zaktualizuj zadanie</h3>
+  <form>
+    <input id="taskTitle" name="taskTitle" type="text" class="form" [(ngModel)] = "task.task_title"><br>
+    <input id="taskWhere" name="taskWhere" type="text" class="form" [(ngModel)] = "task.task_where"><br>
+    <input type="button" (click)="onSubmit()" value="Zaktualizuj" class="form">
+    <!--  -->
+  </form><br>
+</div>

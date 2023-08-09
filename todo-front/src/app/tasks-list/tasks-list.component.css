@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@350&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+table{
+    border-collapse: collapse;
+    margin:auto;
+    font-size:large;
+    border: silver;
+}
+
+tr:nth-child(odd){
+    background-color: #D0E4F5;
+}
+
+button, input[type=button]{
+  background-image: linear-gradient(#64b0ea, #2c7dc0);
+  border: 1px solid #448fc4;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  font-size: 17px;
+  letter-spacing: -.022em;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+h1{
+    text-align: center;
+    color: rgb(18, 22, 82);
+}
+
+button:hover, input[type=button]:hover{
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+
+button:active, input[type=button]:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+
+button:focus, input[type=button]:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+.create{
+    margin:auto;
+    text-align: center;
+}
+
+input[type=text]{
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+    margin:10px 0px 10px 0px;
+    border: 1px silver solid;
+}
+.x{
+    padding: 0px;
+}
+td, th{
+    padding: 5px;
+}
+th{
+    background-color: #adcde8;
+}

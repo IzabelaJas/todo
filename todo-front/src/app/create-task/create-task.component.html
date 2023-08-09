@@ -1,0 +1,11 @@
+<div class="create">
+  <h1 class="fontC">ToDo List</h1>
+  <h3 class="fontC">Co masz do zrobienia?</h3>
+  <form>
+    <input id="taskTitle" name="taskTitle" type="text" class="form" [(ngModel)] = "task.task_title" maxlength="80" required><br>
+    <input id="taskWhere" name="taskWhere" type="text" class="form" [(ngModel)] = "task.task_where" maxlength="30" required><br>
+    <!-- <input id="taskDone" name="taskDone" type="text" class="form" [(ngModel)] = "task.task_done"><br> -->
+    <input type="button" (click)="onSubmit()" value="Dodaj" class="form">
+    <!--  -->
+  </form><br>
+</div>
